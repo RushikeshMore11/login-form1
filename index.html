@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            border: 2px solid red;
+            background-color: aqua;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+        .sub-main{
+            /* border: 2px solid black; */
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .start{
+            border-radius: 10px;
+            box-shadow: 10px 8px 29px 3px black;
+            border: 2px solid maroon;
+            background-color: blueviolet;
+            padding: 12px 12px;
+        }
+        .btn{
+            border-radius: 8px;
+            width: 50%;
+            font-size: large;
+            scroll-padding: 4px 2px ;
+            margin: 12px ;
+            background-color: blue;
+            color: white;
+            border: 1px solid #e28e61;
+        }
+        .btn:hover{
+            font-weight: 500;
+            background-color: rgb(64, 64, 211);
+            border: 1px solid white;
+            color: black;
+            /* transform: rotate(1deg); */
+            transition: .1s;
+        }
+        input{
+            border-radius: 4px ;
+            margin: 5%;
+        }
+        .start{
+            display: flex;
+            flex-direction: column;
+        }
+        .main-form input{
+            /* margin: 20px 20 px; */
+            align-self: center;
+            justify-self: center;
+            padding: 12px 12px;
+            width: 80%;
+            overflow: hidden;
+        }
+        #newAcc{
+            margin: 10% 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub-main">
+            <div class="start">
+                <h2>Log in to Your Account</h2>
+                <form action="" class="main-form">
+
+                    <input type="email" name="email" id="email" placeholder="Enter your email/username">
+                    <br>
+                    <input type="password" name="pass" id="password" placeholder="Enter your Password ">
+                    <br>
+            
+                    <button class="btn"> Log in</button>
+            
+                </form>
+            </div>
+            <p id="newAcc">Don't have an Acc? <a href="http://" target="_blank" >Creat a New </a></p>
+        </div>
+    </div>
+</body>
+</html>
